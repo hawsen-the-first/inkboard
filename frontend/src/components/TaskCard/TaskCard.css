@@ -1,0 +1,83 @@
+.task-card {
+  position: relative;
+  display: grid;
+  gap: 0.8rem;
+  padding: 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.task-card--dragging {
+  border-color: var(--accent);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.task-card__top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.task-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.task-card__sketch-count,
+.task-card__footer {
+  color: var(--text-2);
+  font-size: 0.8rem;
+}
+
+.task-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.task-card__tag {
+  padding: 0.25rem 0.55rem;
+  border-radius: var(--radius);
+  font-size: 0.78rem;
+}
+
+.task-card__preview {
+  min-height: 76px;
+  padding: 0.4rem;
+  border-radius: var(--radius);
+  background: #f9f9fc;
+}
+
+.task-card__sketch {
+  width: 100%;
+  height: 70px;
+}
+
+.task-card__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.task-card__menu {
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  display: grid;
+  gap: 0.5rem;
+  min-width: 150px;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.task-card__menu-close {
+  background: transparent !important;
+}

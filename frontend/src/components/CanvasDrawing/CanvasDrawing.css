@@ -1,0 +1,124 @@
+.canvas-drawing {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 0.75rem;
+}
+
+.canvas-drawing__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.canvas-drawing__toolbar button {
+  min-height: 36px;
+}
+
+.canvas-drawing__tool--active {
+  background: var(--accent-dim) !important;
+  border-color: var(--accent) !important;
+}
+
+.canvas-drawing__colors {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.canvas-drawing__color {
+  width: 36px;
+  min-width: 36px;
+  padding: 0;
+  border: 2px solid transparent;
+}
+
+.canvas-drawing__color--active {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.canvas-drawing__range {
+  display: grid;
+  gap: 0.35rem;
+  min-width: 140px;
+  color: var(--text-2);
+  font-size: 0.8rem;
+}
+
+.canvas-drawing__range input {
+  padding: 0;
+  min-height: auto;
+  background: transparent;
+  border: none;
+}
+
+.canvas-drawing__surface {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: #f9f9fc;
+}
+
+.canvas-drawing__canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.canvas-drawing__hint {
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.75rem;
+  font-size: 0.72rem;
+  color: rgba(90, 90, 130, 0.6);
+  pointer-events: none;
+  user-select: none;
+}
+
+.canvas-drawing__footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.canvas-drawing__footer-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.canvas-drawing__ghost {
+  background: transparent !important;
+}
+
+.canvas-drawing__save {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #fff;
+}
+
+.canvas-drawing:fullscreen {
+  background: var(--bg, #191919);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.canvas-drawing:-webkit-full-screen {
+  background: #191919;
+  padding: 1rem;
+}
+
+@media (max-width: 900px) {
+  .canvas-drawing__footer-actions {
+    width: 100%;
+  }
+}

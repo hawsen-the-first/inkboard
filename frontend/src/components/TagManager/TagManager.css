@@ -1,0 +1,100 @@
+.tag-manager__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.tag-manager {
+  width: min(520px, 100%);
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.tag-manager__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tag-manager__header h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.tag-manager__header button {
+  width: 40px;
+  min-width: 40px;
+  padding: 0;
+}
+
+.tag-manager__form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.tag-manager__palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tag-manager__swatch {
+  width: 40px;
+  min-width: 40px;
+  padding: 0;
+  border: 2px solid transparent;
+}
+
+.tag-manager__swatch--active {
+  border-color: #fff;
+}
+
+.tag-manager__create {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.tag-manager__list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.tag-manager__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+
+.tag-manager__tag-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tag-manager__tag-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+}
+
+.tag-manager__item button {
+  background: var(--danger);
+  border-color: transparent;
+  color: var(--danger-text);
+}

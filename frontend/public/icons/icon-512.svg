@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Inkboard icon">
+  <rect width="512" height="512" rx="96" fill="#1e1e2e"/>
+  <rect x="88" y="112" width="336" height="276" rx="42" fill="#24243e" stroke="#6366f1" stroke-width="22"/>
+  <path d="M176 182h160" stroke="#06b6d4" stroke-width="24" stroke-linecap="round"/>
+  <path d="M176 248h116" stroke="#10b981" stroke-width="24" stroke-linecap="round"/>
+  <path d="M176 314h144" stroke="#f59e0b" stroke-width="24" stroke-linecap="round"/>
+  <path d="M366 138l38 38-104 104-48 12 12-48 102-106z" fill="#ffffff"/>
+</svg>
